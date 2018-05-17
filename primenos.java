@@ -8,16 +8,20 @@ public class primenos {
 	{
 		Scanner s=new Scanner(System.in);
 		int num =s.nextInt();
-		for(int i=1;i<=num;i++)
-		{ int count=0;
-			for(int j=2;j<i;j++)
-			{
-				if(num%i==0)
-					count++;
-			}
-			if(count==0)
-				System.out.println(i);
-		}
+	
+	for(int j=1;j<=num;j++)
+	{
+		int count=0;
+	for(int i=2;i<j;i++)
+	{
+		if(j%i==0)
+			count++;
 		
+	}
+	if(count==0)
+	{
+		System.out.println(j);
+	}
+	}
 	}
 }
